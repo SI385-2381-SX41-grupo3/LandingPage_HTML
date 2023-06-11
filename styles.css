@@ -1,0 +1,288 @@
+/* Estilos generales */
+header {
+  background-color: #C2D2E9;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: -290px; 
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #C2D2E9;
+  color: #02315e;
+  margin-top: 1px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex; /* Agregar display flex para alinear elementos en fila */
+  align-items: center; /* Alinear elementos verticalmente en el centro */
+}
+
+.header {
+  background-color: #C2D2E9;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin-right: 10px;
+}
+
+.nav-links li a {
+  color: #4F5361;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 90px;
+  height: 70px;
+  margin-right: 10px;
+}
+
+.nav-links li:first-child a {
+  font-size: 24px;
+  display: block;
+}
+
+.nav-links li:first-child a span {
+  display: block;
+  color: #02315e;
+}
+
+section#hero {
+  background-color: #C2D2E9;
+  padding: 230px 0;
+  text-align: left;
+  margin-top: 1px;
+}
+
+section#hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+section#hero p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #2f70af;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+section#about {
+  background-color: #ffffff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+section#about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+section#about p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+section#servers {
+  background-color: #2f70af;
+  padding: 80px 0;
+  text-align: center;
+}
+
+section#servers h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.server {
+  display: inline-block;
+  margin: 20px;
+}
+
+.server img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.server h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.server p {
+  font-size: 16px;
+}
+
+section#especialist {
+  background-color: #ffffff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+section#especialist h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+section#especialist p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+section#contact {
+  background-color: skyblue;
+  padding: 80px 0;
+  text-align: center;
+}
+
+section#contact h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+section#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+section#contact input,
+section#contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+section#contact button {
+  background-color: #2f70af;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #2f70af;
+  padding: 20px;
+  text-align: center;
+}
+
+footer ul.social-media {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+footer ul.social-media li {
+  margin: 0 5px;
+}
+
+footer ul.social-media li a {
+  color: #ffffff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+footer p {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: 70px;
+  margin-right: 2px;
+}
+
+nav ul li:first-child a {
+  font-size: 24px;
+  display: block;
+}
+
+nav ul li:first-child a span {
+  display: block;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+.nav-links li a {
+  color: #02315e;
+  text-decoration: none;
+  padding: 10px;
+}
+
+#hero .container {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse; /* Cambiar la dirección de los elementos a derecha-izquierda */
+}
+
+#hero .text-container {
+  margin-left: 20px; /* Añadir margen izquierdo para separar los encabezados del contenedor */
+}
+
+#hero h3,
+#hero h1,
+#hero p {
+  margin-left: 20px; /* Añadir margen izquierdo para separar los encabezados del contenedor */
+}
+
+
+
