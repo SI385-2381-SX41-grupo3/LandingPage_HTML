@@ -9,4 +9,4 @@ Sandoval Gamboa, Ximena Solange - U202011698
 Segmento objetivo: 
 Público entre 18 a 50 años que estén buscando una solución a trabajos domésticos o que busquen promocionar sus servicios.
 Soluciones ofrecidas: 
-Interconectar personas que busquen ayuda de un tercero para algún trabajo independiente y a un trabajador que ofrezca estos servicios. 
+Interconectar personas que busquen ayuda de un tercero para algún trabajo independiente y a un trabajador que ofrezca estos servicios. Todo esto en una aplicación que de la seguridad a ambos segmentos.  
