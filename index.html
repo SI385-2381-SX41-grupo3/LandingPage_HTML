@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LandingPage-Grupo02</title>
+    <link rel="stylesheet" href="Css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Año', 'Cant. de Usuarios', 'Plan Básico', 'Plan Light', 'Plan Premiun'],
+          ['2020', 750, 400, 200, 150],
+          ['2021', 1610, 560, 450, 600],
+          ['2022', 2720, 820, 700, 1200]
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Domestic Workers en Peru',
+            subtitle: 'Cant. de Usuarios, Plan Básico, Plan Light y Plan Premiun: 2020-2022',
+          },
+          bars: 'horizontal' // Required for Material Bar Charts.
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="hero__nav container">
+            <figure class="hero__logo">
+                <img src="images/logoDW.png" alt="logo de domestic workers" class="hero__huddle">             
+            </figure>
+            <div class="hero__title-container"></div>
+            <h1 class="hero__title">Domestic <br> Workers</h1>
+            <ul class="hero__menu">
+                <li><a href="#P1" class="hero__cta">Home</a></li>
+                <li><a href="#P2" class="hero__cta">Servicios</a></li>
+                <li><a href="#P-contacto" class="hero__cta">Contacto</a></li>        
+            </ul>                   
+            <ul class="hero__menufinal">
+                <li><a href="#P-contacto" class="hero__cta">Ayuda</a></li>
+                <li><a href="#descargar" class="hero__cta">Descargar</a></li>
+            </ul>
+        </nav>
+        <!-- hasta ahí es para la navbar  -->
+
+        <section class="hero__main container" id="P1">
+            <div class="hero__texts">
+                <h3 class="hero__subtitulo">Bienvenido a Domestic Workers</h3>
+                <h1 class="hero__titulo">Deja tus trabajos domésticos<br>en manos expertas con toda<br>seguridad y confianza.</h1>
+                <p class="hero__parrafo">Encuentra a expertos para esos trabajos que necesitas en tu hogar,<br>en una sola aplicación móvil.</p>
+        
+                <div class="app-store-play-store">
+                    <div class="app-store">
+                        <img src="images/appstore.png" alt="App Store" class="app-store__img">
+                    </div>
+                    <div class="play-store">
+                        <img src="images/playstore.png" alt="Play Store" class="play-store__img">
+                    </div>
+                </div>
+                
+            </div>        
+            <figure class="img__mobile">
+                <img src="images/mobil.png" alt="Mobile" class="mobil__img">
+            </figure>
+        </section>
+        
+        <!-- segunda pantalla -->
+    
+        <section class="segunda-pantalla">
+            <div class="container">
+                <div class="segunda-pantalla__content">
+                    <div class="container1">
+                        <h2 class="segunda-pantalla__title">Domestic Workers</h2>
+                        <div class="parrafo-container">
+                            <p class="parrafo1">Cientos de trabajadores confiables listos para brindarte sus servicios.</p>
+                        </div>
+                    </div>
+                    <div class="container2">
+                        <div class="image-container">
+                            <img src="images/5estrellas.png" alt="5 Estrellas" class="estrellas-image">
+                        </div>
+                        <div class="parrafo-container">
+                            <p class="parrafo2">5 Star Ratings (2k+ Review)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="redes-sociales">
+            <img src="images/facebooklogo.png" alt="Facebook" class="redes-sociales__img">
+             <img src="images/instagramlogo.png" alt="Instagram" class="redes-sociales__img">
+        </div>
+        </section>            
+        
+        <!-- tercera pantalla -->
+
+        <section class="tercera-pantalla" id="P2">
+            <div class="container">
+                <div class="linea"></div>
+                <h2 class="tercera-pantalla__titulo">Funcionalidades</h2>
+                <p class="tercera-pantalla__parrafo">Herramientas pensadas para encontrar y ofrecer <br> puestos de trabajo.</p>
+
+                <div class="conjuntos-container">
+                    <div class="conjunto">
+                        <img src="images/funcionalidad1.svg" alt="Publica tu Anuncio de Empleo" class="funcionalidad-imagen">
+                        <h2 class="funcionalidad-titulo">Publica tu Anuncio de <br> Empleo</h2>
+                        <p class="funcionalidad-descripcion">Comienza a recibir candidatos el <br> mismo día.</p>
+                    </div>
+        
+                    <div class="conjunto">
+                        <img src="images/funcionalidad2.svg" alt="Sé elegido" class="funcionalidad-imagen">
+                        <h2 class="funcionalidad-titulo">Sé elegido</h2>
+                        <p class="funcionalidad-descripcion">Serás contactado por los <br> reclutadores.</p>
+                    </div>
+        
+                    <div class="conjunto">
+                        <img src="images/funcionalidad3.svg" alt="Multipublicación con un Click" class="funcionalidad-imagen">
+                        <h2 class="funcionalidad-titulo">Multipublicación con <br> un Click</h2>
+                        <p class="funcionalidad-descripcion">Tu publicación será distribuida <br> en toda nuestra red.</p>
+                    </div>
+                </div>
+
+                <div class="boton-container">
+                    <a href="#" class="boton-conocer-mas">Conocer más.</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- cuarta pantalla -->
+        <section class="cuarta-pantalla">
+            <div class="container">           
+              <h2 class="cuarta-pantalla__titulo">Beneficios al registrarse</h2>
+              <div class="cuarta-pantalla__contenido">
+                <p class="cuarta-pantalla__parrafo">Ver todos los beneficios</p>
+                <img src="images/flecha.png" alt="flecha" class="flecha-azul">
+              </div>    
+            </div>
+          </section>
+          
+          <section class="cuadrados-container">
+            <div class="cuadrado">
+              <img src="images/imagebox1.png" alt="Previsualización de perfil" class="cuadrado-imagen">
+              <h2 class="cuadrado-titulo">Previsualización de perfil</h2>
+              <p class="cuadrado-descripcion">Evalúa a los candidatos.</p>
+              <img src="images/mil.svg" alt="mil" class="cuadrado-icono">
+            </div>
+          
+            <div class="cuadrado">
+              <img src="images/imagebox2.png" alt="Ofertas cada día" class="cuadrado-imagen">
+              <h2 class="cuadrado-titulo">Ofertas cada día</h2>
+              <p class="cuadrado-descripcion">No te quedes sin encontrar tu trabajo ideal.</p>
+              <img src="images/mil.svg" alt="mil" class="cuadrado-icono">
+            </div>
+          
+            <div class="cuadrado">
+              <img src="images/imagebox3.png" alt="Contrata" class="cuadrado-imagen">
+              <h2 class="cuadrado-titulo">Contrata</h2>
+              <p class="cuadrado-descripcion">Contacta con el candidato.</p>
+              <img src="images/mil.svg" alt="mil" class="cuadrado-icono">
+            </div>
+          </section>       
+
+          <!-- quinta pantalla -->
+<section class="quinta-pantalla" id = "planes" >
+    <div class="conjuntos-p5-container">
+      <div class="conjunto1">
+        <img src="images/imagecard.png" alt="Imagen de la tarjeta" class="imagen-p5">
+      </div>
+      <div class="conjunto2">
+        <div class="linea2"></div>
+        <h2 class="conjunto2-titulo">Membresía</h2>
+        <p class="conjunto2-parrafo">Ten beneficios exclusivos solo para ti <br> pagando una membresía y <br> accediendo a beneficios. Conócelos <br> aquí.</p>
+      </div>
+    </div>
+    <div class="precios-container">
+      <div class="conjunto3">
+        <h2 class="conjunto3-titulo">$ 10</h2>
+        <p class="conjunto3-parrafo">Plan Básico</p>
+      </div>
+      <div class="conjunto4">
+        <h2 class="conjunto4-titulo">$ 20</h2>
+        <p class="conjunto4-parrafo">Plan Light</p>
+      </div>
+      <div class="conjunto5">
+        <h2 class="conjunto5-titulo">$ 30</h2>
+        <p class="conjunto5-parrafo">Plan Premium</p>
+      </div>
+    </div>    
+    <div class="graficoChart" id="barchart_material" style="width: 900px; height: 500px;"></div>
+  </section>
+
+  <!-- pantalla-contactar -->
+  <section class="pantalla-contactar" id="P-contacto">
+    <div class="rectangulo">
+      <div class="conjunto-info">
+        <h2 class="conjunto-info-h2">¿Necesitas más información?</h2>
+        <p class="conjunto-info-p">Contáctanos por nuestros canales.</p>
+        <button class="boton-contactar">Contactar</button>
+      </div>
+      <div class="conjunto-info">
+        <img src="images/celularfooter.png" alt="Imagen de celular">
+      </div>
+    </div>    
+  </section>
+   </header>    
+</body>
+
+<!-- footer  -->
+<footer>
+    <div class="footer-columnas">
+    <div class="conjunto-footer1">
+      <h2 class="footer-h2">Producto</h2>
+      <p class="footer-p">Comunidad</p>
+      <p class="footer-p">Información</p>
+    </div>
+    <div class="conjunto-footer2">
+      <h2 class="footer-h2">Recursos</h2>
+      <p class="footer-p">Guía de usos</p>
+      <p class="footer-p">Tutorial</p>
+      <p class="footer-p">Plantilla de Perfil</p>
+    </div>
+    <div class="conjunto-footer3">
+      <h2 class="footer-h2">Compañía</h2>
+      <p class="footer-p">Nosotros</p>
+      <p class="footer-p">Servicios</p>
+      <p class="footer-p">Contacto</p>
+      <p class="footer-p">Precios</p>
+    </div>
+    <div class="conjunto-footer">
+      <h2 class="footer-h2">Contáctanos</h2>
+      <p class="footer-p">contacto@domesticworkers.org</p>
+      <img src="images/redesiconos.png" alt="Iconos de redes sociales" class="img-footer">
+    </div>
+    </div>
+  </footer>
+</html>
